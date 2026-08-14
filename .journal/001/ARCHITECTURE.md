@@ -3,6 +3,8 @@
 Status: FINAL, revision 2 (review rounds 1–2 complete; post-disposition blocker corrections integrated) · Owner: `SocialArchitect` · Reviewer: `ArchitectureReviewer` · 2026-08-14
 Journal copy: `.journal/001/ARCHITECTURE.md`. Final reviewer disposition: **APPROVE**.
 
+> **Second-spike correction required:** The 2026-08-14 failure spike invalidated the gateway-only Hermes assumption in R1 and refined the F5 recovery path. Do not implement this revision unchanged. See `NOTES.md`, “Second SDK failure spike completed,” for observed results pending an architecture revision.
+
 Evidence base: spike branch `spike/cursor-sdk-hermes` (`spike/main.go`, `spike/bridge.go`, `spike/social.go`), Hermes clone `mcp_serve.py` (EventBridge and MCP tools), journal session 001 (spike verification, transport decision history, economics decision), Cursor SDK Bridge v1.0.28 live behavior observed by the spike.
 
 ## 1. Context and non-goals
